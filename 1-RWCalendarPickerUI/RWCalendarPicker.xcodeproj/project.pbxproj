@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		185CB1FC23C78CE6009F7571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CB1FB23C78CE6009F7571 /* AppDelegate.swift */; };
 		185CB1FE23C78CE6009F7571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CB1FD23C78CE6009F7571 /* SceneDelegate.swift */; };
 		185CB20523C78CE8009F7571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20423C78CE8009F7571 /* Assets.xcassets */; };
+		AC656D6E29C46A0100A7D140 /* CalendarControl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC656D6D29C46A0100A7D140 /* CalendarControl.xcframework */; };
+		AC656D6F29C46A0100A7D140 /* CalendarControl.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC656D6D29C46A0100A7D140 /* CalendarControl.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0071983248EC3EB007B667E /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0071982248EC3EB007B667E /* ItemDetailViewController.swift */; };
 		B0071986248EC3F1007B667E /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0071984248EC3F1007B667E /* ItemListViewController.swift */; };
 		B0071987248EC3F1007B667E /* ChecklistItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0071985248EC3F1007B667E /* ChecklistItemTableViewCell.swift */; };
@@ -25,6 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				AC656D6F29C46A0100A7D140 /* CalendarControl.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,6 +41,7 @@
 		185CB1FD23C78CE6009F7571 /* SceneDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
 		185CB20423C78CE8009F7571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185CB20923C78CE8009F7571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC656D6D29C46A0100A7D140 /* CalendarControl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CalendarControl.xcframework; path = "../2-Framework/CalendarControl/build/CalendarControl.xcframework"; sourceTree = "<group>"; };
 		B0071982248EC3EB007B667E /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		B0071984248EC3F1007B667E /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		B0071985248EC3F1007B667E /* ChecklistItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC656D6E29C46A0100A7D140 /* CalendarControl.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,7 @@
 		AC86A0C929C4598600B7AFAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC656D6D29C46A0100A7D140 /* CalendarControl.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
