@@ -8,11 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		AC4B6AC229C4532A00F2F254 /* CalendarControl.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4B6AC129C4532A00F2F254 /* CalendarControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC4B6ACD29C454BB00F2F254 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B6ACC29C454BB00F2F254 /* Day.swift */; };
+		AC4B6ADA29C4560300F2F254 /* CalendarPickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B6AD629C4560300F2F254 /* CalendarPickerHeaderView.swift */; };
+		AC4B6ADB29C4560300F2F254 /* CalendarDateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B6AD729C4560300F2F254 /* CalendarDateCollectionViewCell.swift */; };
+		AC4B6ADC29C4560300F2F254 /* CalendarPickerFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B6AD829C4560300F2F254 /* CalendarPickerFooterView.swift */; };
+		AC4B6ADD29C4560300F2F254 /* CalendarPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B6AD929C4560300F2F254 /* CalendarPickerViewController.swift */; };
+		AC4B6ADF29C4564900F2F254 /* MonthMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B6ADE29C4564800F2F254 /* MonthMetadata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC4B6ABE29C4532A00F2F254 /* CalendarControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4B6AC129C4532A00F2F254 /* CalendarControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarControl.h; sourceTree = "<group>"; };
+		AC4B6ACC29C454BB00F2F254 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		AC4B6AD629C4560300F2F254 /* CalendarPickerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerHeaderView.swift; sourceTree = "<group>"; };
+		AC4B6AD729C4560300F2F254 /* CalendarDateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC4B6AD829C4560300F2F254 /* CalendarPickerFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerFooterView.swift; sourceTree = "<group>"; };
+		AC4B6AD929C4560300F2F254 /* CalendarPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerViewController.swift; sourceTree = "<group>"; };
+		AC4B6ADE29C4564800F2F254 /* MonthMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +58,30 @@
 			isa = PBXGroup;
 			children = (
 				AC4B6AC129C4532A00F2F254 /* CalendarControl.h */,
+				AC4B6AE029C4566600F2F254 /* Model */,
+				AC4B6AE129C4566F00F2F254 /* View */,
 			);
 			path = CalendarControl;
+			sourceTree = "<group>";
+		};
+		AC4B6AE029C4566600F2F254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B6ACC29C454BB00F2F254 /* Day.swift */,
+				AC4B6ADE29C4564800F2F254 /* MonthMetadata.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC4B6AE129C4566F00F2F254 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC4B6AD729C4560300F2F254 /* CalendarDateCollectionViewCell.swift */,
+				AC4B6AD829C4560300F2F254 /* CalendarPickerFooterView.swift */,
+				AC4B6AD629C4560300F2F254 /* CalendarPickerHeaderView.swift */,
+				AC4B6AD929C4560300F2F254 /* CalendarPickerViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +127,7 @@
 				TargetAttributes = {
 					AC4B6ABD29C4532A00F2F254 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -129,6 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC4B6ACD29C454BB00F2F254 /* Day.swift in Sources */,
+				AC4B6ADF29C4564900F2F254 /* MonthMetadata.swift in Sources */,
+				AC4B6ADB29C4560300F2F254 /* CalendarDateCollectionViewCell.swift in Sources */,
+				AC4B6ADA29C4560300F2F254 /* CalendarPickerHeaderView.swift in Sources */,
+				AC4B6ADC29C4560300F2F254 /* CalendarPickerFooterView.swift in Sources */,
+				AC4B6ADD29C4560300F2F254 /* CalendarPickerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -258,6 +299,7 @@
 		AC4B6AC629C4532A00F2F254 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -279,6 +321,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,6 +330,7 @@
 		AC4B6AC729C4532A00F2F254 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
