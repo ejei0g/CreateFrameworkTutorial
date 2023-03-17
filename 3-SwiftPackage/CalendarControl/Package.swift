@@ -38,12 +38,16 @@ import PackageDescription
 let package = Package(
   name: "CalendarControl",
   platforms: [
-//1
+    .iOS(.v14)
   ],
   products: [
-//2
+    .library(
+       name: "CalendarControl",
+       targets: ["CalendarControl"]),
   ],
   targets: [
-//3
+    .binaryTarget(
+      name: "CalendarControl",
+      path: "./Sources/CalendarControl.xcframework")
   ]
 )
