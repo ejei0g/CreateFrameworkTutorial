@@ -11,24 +11,12 @@
 		185CB1FC23C78CE6009F7571 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CB1FB23C78CE6009F7571 /* AppDelegate.swift */; };
 		185CB1FE23C78CE6009F7571 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185CB1FD23C78CE6009F7571 /* SceneDelegate.swift */; };
 		185CB20523C78CE8009F7571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185CB20423C78CE8009F7571 /* Assets.xcassets */; };
-		AC86A0D029C459AF00B7AFAE /* CalendarControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC86A0CF29C4598700B7AFAE /* CalendarControl.framework */; };
-		AC86A0D129C459AF00B7AFAE /* CalendarControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC86A0CF29C4598700B7AFAE /* CalendarControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0071983248EC3EB007B667E /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0071982248EC3EB007B667E /* ItemDetailViewController.swift */; };
 		B0071986248EC3F1007B667E /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0071984248EC3F1007B667E /* ItemListViewController.swift */; };
 		B0071987248EC3F1007B667E /* ChecklistItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0071985248EC3F1007B667E /* ChecklistItemTableViewCell.swift */; };
 		B043265C24562FCC00D5239A /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043265B24562FCC00D5239A /* ChecklistItem.swift */; };
 		B0432660245632AD00D5239A /* String+Truncate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B043265F245632AD00D5239A /* String+Truncate.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AC86A0CE29C4598700B7AFAE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC86A0CA29C4598700B7AFAE /* CalendarControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AC4B6ABE29C4532A00F2F254;
-			remoteInfo = CalendarControl;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AC86A0D229C459AF00B7AFAE /* Embed Frameworks */ = {
@@ -37,7 +25,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AC86A0D129C459AF00B7AFAE /* CalendarControl.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +38,6 @@
 		185CB1FD23C78CE6009F7571 /* SceneDelegate.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; tabWidth = 2; };
 		185CB20423C78CE8009F7571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185CB20923C78CE8009F7571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC86A0CA29C4598700B7AFAE /* CalendarControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CalendarControl.xcodeproj; path = "../2-Framework/CalendarControl/CalendarControl.xcodeproj"; sourceTree = "<group>"; };
 		B0071982248EC3EB007B667E /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		B0071984248EC3F1007B667E /* ItemListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		B0071985248EC3F1007B667E /* ChecklistItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChecklistItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -65,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC86A0D029C459AF00B7AFAE /* CalendarControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,17 +102,8 @@
 		AC86A0C929C4598600B7AFAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AC86A0CA29C4598700B7AFAE /* CalendarControl.xcodeproj */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AC86A0CB29C4598700B7AFAE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AC86A0CF29C4598700B7AFAE /* CalendarControl.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		B04326622456398000D5239A /* ItemListViewController */ = {
@@ -187,28 +163,12 @@
 			mainGroup = 185CB1EF23C78CE6009F7571;
 			productRefGroup = 185CB1F923C78CE6009F7571 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AC86A0CB29C4598700B7AFAE /* Products */;
-					ProjectRef = AC86A0CA29C4598700B7AFAE /* CalendarControl.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				185CB1F723C78CE6009F7571 /* RWCalendarPicker */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AC86A0CF29C4598700B7AFAE /* CalendarControl.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CalendarControl.framework;
-			remoteRef = AC86A0CE29C4598700B7AFAE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		185CB1F623C78CE6009F7571 /* Resources */ = {
