@@ -41,7 +41,7 @@ class CalendarDateCollectionViewCell: UICollectionViewCell {
     super.init(frame: frame)
 
     isAccessibilityElement = true
-    accessibilityTraits = .button
+    accessibilityTraits = UIAccessibilityTraits.button
 
     contentView.addSubview(selectionBackgroundView)
     contentView.addSubview(numberLabel)
@@ -109,7 +109,7 @@ private extension CalendarDateCollectionViewCell {
 
   // 3
   func applySelectedStyle() {
-    accessibilityTraits.insert(.selected)
+    accessibilityTraits.insert(UIAccessibilityTraits.selected)
     accessibilityHint = nil
 
     numberLabel.textColor = isSmallScreenSize ? .systemRed : .white
@@ -118,7 +118,7 @@ private extension CalendarDateCollectionViewCell {
 
   // 4
   func applyDefaultStyle(isWithinDisplayedMonth: Bool) {
-    accessibilityTraits.remove(.selected)
+    accessibilityTraits.remove(UIAccessibilityTraits.selected)
     accessibilityHint = "Tap to select"
 
     numberLabel.textColor = isWithinDisplayedMonth ? .label : .secondaryLabel

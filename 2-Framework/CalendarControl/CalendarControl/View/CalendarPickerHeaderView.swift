@@ -7,7 +7,7 @@ class CalendarPickerHeaderView: UIView {
     label.translatesAutoresizingMaskIntoConstraints = false
     label.font = .systemFont(ofSize: 26, weight: .bold)
     label.text = "Month"
-    label.accessibilityTraits = .header
+    label.accessibilityTraits = UIAccessibilityTraits.header
     label.isAccessibilityElement = true
     return label
   }()
