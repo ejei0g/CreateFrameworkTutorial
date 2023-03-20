@@ -24,8 +24,7 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
+  spec.description  = "Test CocoaPod"
 
   spec.homepage     = "https://github.com/ejei0g/CreateFrameworkTutorial.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -62,7 +61,6 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
   spec.platform     = :ios, "14.0"
 
   #  When using multiple platforms
@@ -78,7 +76,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/ejei0g/CreateFrameworkTutorial.git"
+  spec.source       = { :git => "https://github.com/ejei0g/CreateFrameworkTutorial.git",
                         :tag => "#{spec.version}" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +87,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "2-Framework/CalendarControl", "2-Framework/CalendarControl/**/*.{h,m}"
+  spec.source_files  = "2-Framework/CalendarControl", "2-Framework/CalendarControl/**/*.{h,m,swift}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
