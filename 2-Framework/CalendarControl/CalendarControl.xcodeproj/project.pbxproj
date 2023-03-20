@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691418BF3DD888658875D0FC /* libPods-CalendarControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B858B7787C407EB6BDF35D7 /* libPods-CalendarControl.a */; };
 		AC4B6AC229C4532A00F2F254 /* CalendarControl.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4B6AC129C4532A00F2F254 /* CalendarControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC4B6ACD29C454BB00F2F254 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B6ACC29C454BB00F2F254 /* Day.swift */; };
 		AC4B6ADA29C4560300F2F254 /* CalendarPickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4B6AD629C4560300F2F254 /* CalendarPickerHeaderView.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E364474862BE0F26E498FC4 /* Pods-CalendarControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarControl.debug.xcconfig"; path = "Target Support Files/Pods-CalendarControl/Pods-CalendarControl.debug.xcconfig"; sourceTree = "<group>"; };
+		7B858B7787C407EB6BDF35D7 /* libPods-CalendarControl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CalendarControl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4B6ABE29C4532A00F2F254 /* CalendarControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CalendarControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4B6AC129C4532A00F2F254 /* CalendarControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarControl.h; sourceTree = "<group>"; };
 		AC4B6ACC29C454BB00F2F254 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
@@ -25,6 +28,7 @@
 		AC4B6AD829C4560300F2F254 /* CalendarPickerFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerFooterView.swift; sourceTree = "<group>"; };
 		AC4B6AD929C4560300F2F254 /* CalendarPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarPickerViewController.swift; sourceTree = "<group>"; };
 		AC4B6ADE29C4564800F2F254 /* MonthMetadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthMetadata.swift; sourceTree = "<group>"; };
+		C3B9C40F406B0E36263BB7F3 /* Pods-CalendarControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarControl.release.xcconfig"; path = "Target Support Files/Pods-CalendarControl/Pods-CalendarControl.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691418BF3DD888658875D0FC /* libPods-CalendarControl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DAB9149880FB3BB131798F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B858B7787C407EB6BDF35D7 /* libPods-CalendarControl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C7FF63BBBAE56FF7090E178 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E364474862BE0F26E498FC4 /* Pods-CalendarControl.debug.xcconfig */,
+				C3B9C40F406B0E36263BB7F3 /* Pods-CalendarControl.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AC4B6AB429C4532A00F2F254 = {
 			isa = PBXGroup;
 			children = (
 				AC4B6AC029C4532A00F2F254 /* CalendarControl */,
 				AC4B6ABF29C4532A00F2F254 /* Products */,
+				6C7FF63BBBAE56FF7090E178 /* Pods */,
+				1DAB9149880FB3BB131798F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +127,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC4B6AC529C4532A00F2F254 /* Build configuration list for PBXNativeTarget "CalendarControl" */;
 			buildPhases = (
+				10AA6F19A282CE74A5ED197C /* [CP] Check Pods Manifest.lock */,
 				AC4B6AB929C4532A00F2F254 /* Headers */,
 				AC4B6ABA29C4532A00F2F254 /* Sources */,
 				AC4B6ABB29C4532A00F2F254 /* Frameworks */,
@@ -158,6 +184,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10AA6F19A282CE74A5ED197C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalendarControl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC4B6ABA29C4532A00F2F254 /* Sources */ = {
@@ -298,6 +349,7 @@
 		};
 		AC4B6AC629C4532A00F2F254 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E364474862BE0F26E498FC4 /* Pods-CalendarControl.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -330,6 +382,7 @@
 		};
 		AC4B6AC729C4532A00F2F254 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B9C40F406B0E36263BB7F3 /* Pods-CalendarControl.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
